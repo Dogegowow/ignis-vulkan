@@ -54,6 +54,8 @@ sample_vulkan_members.json
 Ta datoteka vsebuje izmišljena imena in je namenjena samo temu, da lahko drugi vidijo obliko podatkov.
 Program je ne bo uporabil za pravi prenos v Vulkan.
 
+Resnično datoteko se dobi iz GET requesta ob dodajanju člana v `https://apl.gasilec.net/vulkan/delo/...(ID dela)`.
+
 ## Opombe
 
 - Prenos opreme v prvi različici ni vključen.
