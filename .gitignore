@@ -1,0 +1,19 @@
+# Local Python/runtime files
+.venv/
+.ms-playwright/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Local app state and private data
+local_state/
+vulkan_members.json
+Aktivnosti*.xlsx
+
+# Development-only files moved out of the shareable app
+extra_files/
+captures/
+
+# Editor/OS noise
+.DS_Store
+Thumbs.db

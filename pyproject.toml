@@ -1,0 +1,8 @@
+[project]
+name = "ignis-vulkan-transfer"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "openpyxl>=3.1",
+    "playwright>=1.44",
+]

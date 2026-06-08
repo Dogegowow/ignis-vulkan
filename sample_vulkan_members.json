@@ -1,0 +1,26 @@
+[
+  {
+    "clanId": 100001,
+    "ime": "ANA",
+    "priimek": "NOVAK",
+    "orgId": 1468
+  },
+  {
+    "clanId": 100002,
+    "ime": "MARKO",
+    "priimek": "KOVAČ",
+    "orgId": 1468
+  },
+  {
+    "clanId": 100003,
+    "ime": "PETRA",
+    "priimek": "HORVAT",
+    "orgId": 1468
+  },
+  {
+    "clanId": 100004,
+    "ime": "MIHA",
+    "priimek": "ZUPAN",
+    "orgId": 1468
+  }
+]
