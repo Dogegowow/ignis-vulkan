@@ -60,31 +60,12 @@ Za normalno uporabo glavnega orodja so potrebne te datoteke in mape:
 - `ignis_vulkan/members.py` - nalaganje članov in povezovanje imen z `clanId`.
 - `ignis_vulkan/models.py` - skupne podatkovne strukture.
 - `ignis_vulkan/transform.py` - branje Excela, pretvorba kategorij, trajanje in razčlenjevanje sodelujočih.
-- `vulkan_members.json` - zasebni seznam Vulkan članov in njihovih ID-jev; ta datoteka ostane samo na uporabnikovem računalniku.
 - `sample_vulkan_members.json` - javni primer oblike datoteke članov z izmišljenimi imeni.
-- `.venv/` - lokalno Python okolje z nameščenimi knjižnicami.
-- `.ms-playwright/` - lokalni brskalnik, ki ga uporablja Playwright.
 - `pyproject.toml` - opis projekta in odvisnosti.
-- `local_state/state.json` - lokalna zgodovina dokončanih vrstic in nastavitev, ko je program že uporabljen.
 
 Uporabnik poleg teh datotek potrebuje še Excelov izvoz iz Ignisa, ki ga izbere v aplikaciji.
 
-## 6. Datoteke, ki niso potrebne za normalno uporabo
-
-Razvojne, testne in raziskovalne datoteke so premaknjene v mapo `extra_files/`. Mednje spadajo:
-
-- testne skripte,
-- poskusi podvojenih POST zahtevkov,
-- pomočnik za zajem Vulkan zahtevkov,
-- zajeti dnevniki zahtevkov,
-- avtomatizirani testi,
-- stara avtomatizacija klikanja po spletnem vmesniku,
-- Python predpomnilnik in gradbene metapodatkovne datoteke.
-- zasebni podatki, kot so pravi člani v `vulkan_members.json`.
-
-Te datoteke so uporabne za razvojno zgodovino in razhroščevanje, niso pa potrebne za običajen mesečni prenos aktivnosti.
-
-## 7. Varnostni mehanizmi
+## 6. Varnostni mehanizmi
 
 Program vsebuje več varnostnih mehanizmov:
 
@@ -97,7 +78,7 @@ Program vsebuje več varnostnih mehanizmov:
 
 Pomembna omejitev je, da Vulkan sam dovoljuje podvojene aktivnosti. Zato naj bo možnost za preskok lokalno že prenesenih vrstic običajno vklopljena.
 
-## 8. Uporabljene tehnologije
+## 7. Uporabljene tehnologije
 
 - Python
 - Tkinter za namizni uporabniški vmesnik
@@ -106,6 +87,6 @@ Pomembna omejitev je, da Vulkan sam dovoljuje podvojene aktivnosti. Zato naj bo 
 - JSON za podatke o članih in lokalno stanje
 - Vulkan HTTP POST končne točke za ustvarjanje aktivnosti in vpis članov
 
-## 9. Zaključek
+## 8. Zaključek
 
 Končno orodje spremeni ponavljajoč se ročni postopek v pregledan polavtomatski potek dela. Uporabnik še vedno nadzoruje vsako aktivnost, program pa odstrani večino ročnega tipkanja in iskanja članov. Največja izboljšava je bil prehod iz nezanesljive avtomatizacije spletnega vmesnika na Vulkanov lastni format zahtevkov, kar je prenos naredilo zanesljivejši.
