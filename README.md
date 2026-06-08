@@ -18,7 +18,7 @@ Majhno namizno orodje za mesečni prenos aktivnosti iz Ignisovega Excel izvoza v
 
 ## Namestitev
 
-Najprej naredi lokalno Python okolje in namesti odvisnosti:
+Najprej naredi lokalno Python okolje in namesti dependencije:
 
 ```powershell
 python -m venv .venv
@@ -26,8 +26,6 @@ python -m venv .venv
 $env:PLAYWRIGHT_BROWSERS_PATH = "$PWD\.ms-playwright"
 .\.venv\Scripts\python.exe -m playwright install chromium
 ```
-
-Če ukaz `python` ni na voljo v poti, uporabi Python, ki ga običajno uporabljaš.
 
 ## Zagon
 
@@ -56,17 +54,7 @@ sample_vulkan_members.json
 Ta datoteka vsebuje izmišljena imena in je namenjena samo temu, da lahko drugi vidijo obliko podatkov.
 Program je ne bo uporabil za pravi prenos v Vulkan.
 
-Prava datoteka z dejanskimi člani mora ostati samo na tvojem računalniku:
-
-```text
-vulkan_members.json
-```
-
-Ta datoteka je v `.gitignore`, zato se ne sme naložiti na GitHub.
-
 ## Opombe
 
-- Preverjanje podvojenih aktivnosti v Vulkanu namenoma ni vključeno.
 - Prenos opreme v prvi različici ni vključen.
-- Člani, ki jih ni v Vulkanu, so prikazani in zabeleženi, nato pa preskočeni.
 - Trenutni prenos uporablja Vulkan POST zahtevke prek prijavljene brskalniške seje, ne klikanja potrditvenih polj.
